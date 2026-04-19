@@ -3,7 +3,6 @@
 #  it is going to be root folder where we create our fastapi application
 
 
-
 from fastapi import FastAPI
 from app import models
 from app.database import engine
