@@ -13,6 +13,8 @@ app=FastAPI()
 models.Base.metadata.create_all(bind=engine) #this will only be ran if our todos.db doesnt exist. So if go back to our models file and 
 # enhance the todos tables, this will not run automatically and enhance the tables. Its easier just to delete the todos.db file with quck and easy databases. 
 
+
+
 app.include_router(auth.router)
 app.include_router(todos.router)
 app.include_router(admin.router)
